@@ -1,0 +1,795 @@
+@font-face {
+	font-family: 'LatoRegular';
+	src: url('http://www.yatra.com/content/fresco/default/fonts/lato-reg.eot'); /* IE9 Compat Modes */
+	src: url('http://www.yatra.com/content/fresco/default/fonts/lato-reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('http://www.yatra.com/content/fresco/default/fonts/lato-reg.woff') format('woff'), /* Modern Browsers */
+	     url('http://www.yatra.com/content/fresco/default/fonts/lato-reg.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('http://www.yatra.com/content/fresco/default/fonts/lato-reg.svg#LatoRegular') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'LatoBold';
+	src: url('http://www.yatra.com/content/fresco/default/fonts/lato-bol.eot'); /* IE9 Compat Modes */
+	src: url('http://www.yatra.com/content/fresco/default/fonts/lato-bol.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('http://www.yatra.com/content/fresco/default/fonts/lato-bol.woff') format('woff'), /* Modern Browsers */
+	     url('http://www.yatra.com/content/fresco/default/fonts/lato-bol.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('http://www.yatra.com/content/fresco/default/fonts/lato-bol.svg#LatoBold') format('svg'); /* Legacy iOS */
+}
+
+html, body{font-family: LatoRegular, arial}
+.latoBold{font-family:LatoBold, arial}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.latoBold{font-weight:normal}
+}
+
+#frescoHeader {
+    /*font-family: LatoRegular, arial; */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+	margin: 0;
+	font-size:12px;
+	height:70px;
+}
+
+#frescoHeader .navBlock ul { list-style:none; }
+
+#frescoHeader ul{ 
+	margin: 0;
+ }
+  
+ul.noListStyle{
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.noListStyle li{
+  display: inline-block;
+  vertical-align:top;
+  *display: inline;
+  *zoom: 1;
+}
+
+.clearfix{*zoom: 1}
+.clearfix:before,.clearfix:after {display: table;line-height: 0;content: ""}
+.clearfix:after {clear: both}
+.clearFloat{clear:both}
+
+/******************* eof reset css *******************/
+
+.ytContainerFluid {*zoom: 1;position:relative;*z-index:0}
+.ytContainerFluid:before, #frescoHeader .ytContainerFluid:after {  display: table;  line-height: 0;  content: "";}
+.ytContainerFluid:after { clear: both;}
+.ytContainerFixed {
+	*zoom: 1;
+	width:967px!important; 
+	margin: 0 auto;
+	position:relative;*z-index:1;
+	/*background:#fff;*/
+}
+.ytContainerFixed:before,
+.ytContainerFixed:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.ytContainerFixed:after {
+  clear: both;
+}
+
+/******************* Start essentials *******************/
+.flL{float:left}
+.flLI{float:left!important}
+.flR{float:right}
+.flRI{float:right!important}
+.hide{display:none}
+.hideimp{display:none !important}
+.relative{position:relative}
+/******************* eof essentials *******************/
+
+/******************* start Global Font sizes *******************/
+.txtSmall{font-size:11px}
+/******************* eof Global Font sizes *******************/
+
+/******************* start Global Text colors *******************/
+.txtLgtGrey{color:#55544e}
+/******************* eof Global Text colors *******************/
+
+/******************* common margin and padding css *******************/
+.mt20{margin-top:20px;}
+
+/******************* start common sprite *******************/
+/*#frescoHeader .sprite{background: url("../images/yatraSprite.png") no-repeat scroll 0 0 transparent;}*/
+
+/******************* start header *****************************/
+.headerBgImg{
+	background: url("../images/headerBg-v2.jpg") 0 0 repeat-x;
+	width:100%;
+	position: relative;
+	*z-index:4000;
+}
+
+.navOuter{position:relative;float:right;width:780px}
+.support{width:126px;height:49px;padding-top:15px;position:relative;float:right}
+.socialLinks{float:right;margin-top:10px;}
+.custSupport{font-size:11px;float:right!important;padding-bottom:24px;margin-top: 14px;}
+.custSupport a {font-size:13px;color: #1C91B2;}
+.custSupport a:hover{text-decoration:none; color:#FF820A}
+.countryLink{
+	background-color: #FFFFFF;
+	border:1px solid #dddddd;
+	border-top:0;
+    border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+    display: none;
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    width: 57px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 100%;
+	right:0;
+    z-index: 1000;
+}
+
+.yticonIndia{background-position:0 -49px;width:21px;display:inline-block}
+.yticonUs {
+    background-position: -28px -50px;
+    margin-right: 5px;
+    display: inline-block;
+    width: 18px;
+}
+.signIn{display:block!important;text-align:right;position: absolute;right: 0;top:10px;width: 500px;}
+.signIn a{color:#1C91B2;margin: 0 2px 0 0;font-size:13px}
+.signIn a:hover{color:#FF7B02!important}
+.usrOptions i{width:15px;height:15px;display:inline-block; margin-left: 4px; vertical-align: middle;}
+.pointDwn {
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  vertical-align: middle;
+  background-position:-187px -2px;
+  *background-position:-187px 0px;
+  cursor:pointer;
+}
+.ytUsrLogout{color:#509BB1!important}
+
+#userLoginBlock .sep{margin:0 3px}
+
+.usrLoggedIn{margin-top:23px; padding-bottom:15px}
+/******************* eof header *******************/
+
+/******************* start navigation *******************/
+.navBlock {
+	margin-left: 0;
+	list-style: none;
+}
+
+.nav-tabs {
+	*zoom: 1;
+	padding:0;
+	list-style-type:none;
+	font-size:13px;
+}
+
+.nav-tabs:before,
+.nav-tabs:after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.nav-tabs:after{
+	clear: both;
+}
+
+.nav-tabs li {margin:0;padding:0;float:left}
+.nav-tabs li a.dropdown-toggle, .nav-tabs li a.simple-tab{
+	display: block;
+	padding:10px 13px 24px 13px;
+	margin: 0px;
+	color: #1c91b2;
+	border:0 none;
+}
+.nav-tabs li a:hover{text-decoration: none!important;}
+.nav-tabs li:hover,
+.nav-tabs li a.simple-tab:hover,
+.nav-tabs .active a.simple-tab,
+.nav-tabs .active a.dropdown-toggle,
+.nav-tabs .active a.dropdown-toggle:hover{
+	text-decoration: none!important;
+	color: #ff820a;
+	box-shadow:0 -44px 23px -11px #FFFFFF inset;
+	background-color:#EEEEEE;
+	background-color:#ffffff\9;
+}
+.nav-tabs .catgSelectedIcon{display:none}
+.nav-tabs .active .catgSelectedIcon{display:block!important}
+.navOuter a{text-decoration:none}
+/******************* eof navigation *******************/
+
+/******************* start dropdown *******************/
+.dropdown, .simple {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 140px;
+  padding: 5px 0 0;
+  margin:0;
+  list-style: none;
+  background-color: #ffffff;
+  border:0;
+}
+.custSupport .dropdown-menu{background:#E7E8EA!important;left:-15px;width: 140px;border:0px!important;border-top:0!important}
+.custSupport .dropdown-menu li a{*width:120px!important}
+.dropdown-menu li{display:block!important;width:100%;}
+.dropdown-menu li a {
+  display:block;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  color: #2D84B9;
+  white-space: nowrap;
+  margin-top:-6px;
+  padding:6px 10px; 
+  *width:162px!important;
+}
+.dropdown-menu li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+}
+
+
+ul.nav-tabs.tabletHidden li.dropdown:hover ul.dropdown-menu, 
+ul.navUser li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+/*ul.nav-tabs li.active ul.dropdown-menu{display: block;}*/
+.navUser a:hover{text-decoration:none}
+/******************* eof dropdown *******************/
+
+
+.tabletOnly{display:none}
+
+
+#userLoginBlock{
+	
+	max-width: 500px;
+}
+.ytUsrname{ 
+	display: inline-block;
+    text-align: left;
+    max-width: 450px;
+	/**width: 58px;*/
+	vertical-align:top;
+	margin-top:1px;
+	
+}
+.loginRgt{
+	position: absolute;
+    right: 0;
+}
+/******** Start css for complete user name on header *********/
+/*.supportNew{position:relative!important;float:right!important}
+.supportNew .signIn{ position: absolute;right: 12px;width: 500px;}
+.supportNew  #userLoginBlock {max-width: 500px;}
+.supportNew  .ytUsrname{max-width: 450px;}
+.supportNew  .custSupport {margin-top: 20px;}*/
+/******** eof css for complete user name on header *********/
+
+/******** Start css Error page *********/
+.errorPg{margin:0 auto; font-family:arial}
+.logoWraper{text-align:center;margin: 0 0 20px 0;}
+.tempErrorBg{background:url(../images/temp_error_bg.jpg) no-repeat; height:222px; padding-top:75px; text-align:center;}
+.errorTxt1{color:#cd4502; font-weight:bold; font-size:25px; margin-right:65px;}
+.errorTxt2{color:#24a1b5; font-size:29px; margin-right:65px;}
+.w583{width:538px}
+/******** eof css Error page *********/
+
+/******** start Header More Nav css *********/
+.nav-tabs li.moreNav a.simple-tab{padding:6px 10px!important}
+.nav-tabs li.moreNav ul.dropdown-menu li.simple a.simple-tab:hover, .nav-tabs li.moreNav ul.dropdown-menu li.dropdown a.simple-tab:hover, .moreDdnToggle:hover{
+	color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  box-shadow:none;
+}
+.moreDdnMenu{left:100%;top:0;display:none!important}
+.moreDdnMenu li{border-left:1px solid #E6E6E6}
+.moreDdnMenu li:first-child{border-left:none}
+.showChilds .moreDdnMenu{ display:block!important; }
+.moreDdnToggle:hover{
+	box-shadow:none!important;
+}
+.moreDdnToggle:hover a.simple-tab{color:#fff}
+.moreDdnToggle:hover .moreDdnMenu a.simple-tab{color:#2D84B9}
+/******** eof Header More Nav css *********/
+
+/******** start service sprite *********/
+.ytServiceSprite{background: url("http://css.yatra.com/content/fresco/default/images/ytServiceSprite.png") no-repeat scroll 0 0 transparent;}
+.ytLogo {
+    background-position: 0 0;
+    float: left;
+    height: 48px;
+    margin: 8px 0 0 5px;
+    width: 160px;
+	text-decoration:none;
+}
+.ytLogo:hover{ text-decoration:none}
+.pointDwn {
+    background-position: -187px 0px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 13px;
+}
+
+.pointUp {
+    background-position: -172px 0px;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 13px;
+}
+.moreNav .moreDdnToggle .pointDwn{background-position:-190px -13px;height:13px;position: absolute;right: 5px;top:10px}
+.moreNav .moreDdnToggle:hover .pointDwn{background-position:-190px -30px;}
+.ytOldSite {
+    background-position:-109px -48px;
+    height: 35px;
+    left: -115px;
+    position: absolute;
+    top: 17px;
+    width: 90px;
+	text-decoration:none;
+}
+.ytOldSite:hover{text-decoration:none}
+.mobileAppArea{  height: 45px;
+    position: absolute;
+    right: -146px;
+    text-decoration: none;
+    top: 10px;
+    width: 120px;color:#1C91B2;
+}
+.mobileAppArea:hover{text-decoration:none;color:#FF820A; opacity:0.90}
+.mobileAppIcon{ background-position: -204px 0;
+    float: left;
+    height: 29px;    
+    width: 75px;}
+/******** eof service sprite ***********/
+
+/******** Tablet View*********/
+@media only screen and (min-width: 640px) and (max-width: 900px){
+  .ytContainerFluid,
+  .ytColm12,
+  .ytContainerFixed{
+    width: 100% !important;
+  }
+
+  #frescoHeader .ytLogo {margin-left:15px}
+  #frescoHeader .tabletHidden{display:none;}
+  #frescoHeader .tabletOnly{visibility:visible;display:inline-block}
+  #frescoHeader .navOuter{float:left;margin-left:20px}
+  #frescoHeader .support {left:423px}
+
+
+}
+
+.registerQuickBook, .registerQuickBook:visited{
+	color:#FF7C00!important;
+	font-weight:bold;
+	}
+.usNumber{margin-top:29px; margin-right: 5px; font-size: 13px; color: #3C3D3D}
+.usNumberLogin{margin-top: 38px;}
+/******** payment header css*********/
+.middleTxtPay {
+    color: #B8B8B8;
+    float: left;
+    font-family: latobold;
+    font-size: 20px;
+    height: 100%;	    
+    text-align: center;
+    vertical-align: middle;
+    width: 470px;
+}
+.call-icoHead {
+    background-position:-230px -36px;
+    height: 22px;
+    width: 20px; margin-right:5px; float:left;	
+}
+.usNumber .payColor{color:#666766}
+.payCallNo{position:absolute; right:0; top:0}
+
+.eCashholder .ecashIcon{background:url("../images/ecash-icon.png") no-repeat scroll 0 0 transparent; padding-bottom:3px;; display:inline-block}
+.eCashholder .ecashText{padding-left:23px; padding-right:3px;}
+.eCashholder .eCahseValue{background:#15718C; color:#fff; padding:3px;}
+
+
+/* Start resposive header css */
+
+@media only screen and (max-width: 980px) {
+  .tabletOnly {
+    visibility: visible !important;
+    display: inline-block;
+  }
+
+  .tabletHidden {
+    display: none;
+  }
+
+  #frescoHeader .headerResponsive .fresco-resposive-content {
+    width: 100%;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content:before, 
+  #frescoHeader .headerResponsive .fresco-resposive-content:after {
+    content: " ";
+    display: block;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content:after {
+    clear: both;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter {
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    width: 350px;
+    /*** to be removed when js applied***/
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .support {
+    position: absolute;
+    left: 423px;
+    height: 49px;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav a.simple-tab {
+    padding: 6px 10px !important;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav ul.dropdown-menu li.simple a.simple-tab:hover, 
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav ul.dropdown-menu li.dropdown a.simple-tab:hover, 
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnToggle:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0081c2;
+    background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+    background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+    background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+    background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+    background-repeat: repeat-x;
+    box-shadow: none;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnMenu {
+    left: 100% !important;
+    top: 0 !important;
+    display: none !important;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnMenu li {
+    border-left: 1px solid #e6e6e6;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnMenu li:first-child {
+    border-left: none;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .showChilds .moreDdnMenu {
+    display: block !important;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnToggle .point-dwn {
+    background-position: -133px -56px;
+    height: 13px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnToggle:hover {
+    box-shadow: none !important;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnToggle:hover a.simple-tab {
+    color: white;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .moreDdnToggle:hover .moreDdnMenu a.simple-tab {
+    color: #2d84b9;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .nav-tabs li.moreNav .open-dropdown {
+    display: block !important;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .tabletOnly .showChilds .dropdown-menu {
+    display: block !important;
+  }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter {
+    width: 74%;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .support {
+    position: relative;
+    left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter {
+    margin-left: 0;
+    width: 71.5%;
+  }
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter .support {
+    position: relative;
+    left: 0px;
+    margin-right: -10px;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 639px) {
+  #frescoHeader .headerResponsive .fresco-resposive-content .navOuter {
+    display: none;
+    float: left;
+  }
+  .mobileAppArea{display:none}
+  
+  /* Bug Fix for icon align for resolution below 640px */
+  #frescoHeader .ytLogo {
+	position:absolute;
+	top:10px;
+	left:0px;
+	right:0px;
+	margin:auto;
+  }
+.ytContainerFixed{
+    width: 100%!important;
+  }
+  
+  .fresco-resposive-content .icon-align {
+  	margin-top:26px !important;
+  }
+  .ui-icon-header, .ui-icon-label:after {
+    background-image: url("http://css.yatra.com/content/fresco/default/images/ytServiceSprite.png");
+    background-position: -184px -246px;
+    display: inline-block;
+    height: 24px !important;
+    width: 24px !important;  margin-top:20px;
+  }
+  #frescoHeader .headerResponsive{ margin: 0 auto;
+    max-width: 967px;
+    padding: 0 10px;
+    width: 100%;}
+}
+
+/*mobile navigationb left part*/
+.mobile-menu-toggle {
+  padding: 26px;
+  display: none;
+  margin-left: -10px;
+}
+
+.toggle-me {
+  font-size: 2em;
+}
+
+.offcanvas {
+  background-color: #1D8FAE;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  transform: translateX(-80%);
+  transition: transform 0.3s ease 0s, width 0.3s ease 0s;
+  width: 0;
+  z-index: 9999;
+   background-color: #f8f8f8;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #c4c4c4;
+  -webkit-box-shadow: -10px 0 10px 2px #eeeeee inset;
+  -moz-box-shadow: -10px 0 10px 2px #eeeeee inset;
+  box-shadow: -10px 0 10px 2px #eeeeee inset;
+}
+
+.offcanvas.open {
+  transform: translateX(0px);
+  width: 80%;
+}
+
+/*do via js*/
+
+.slide .mobile-menu-toggle {
+  background: #1D8FAE;
+  border-right: 1px solid #40A1BA;
+  /*@include box-shadow(#333333 0 0 1px inset);*/
+}
+
+.off-menu-outer.slideRgt{
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.off-nav-scroll {
+  overflow-y: hidden !important;
+}
+
+.off-menu-outer.slideRgt.slide {
+  display: block !important;
+}
+
+.scroll {
+  height: 100%;
+  overflow-y: none;
+  
+  background: #f8f8f8;
+    padding: 0.625em;
+	/* border-right: 1px solid #c4c4c4;
+    -webkit-box-shadow: -3px 0 3px 4px #eeeeee inset;
+    -moz-box-shadow: -3px 0 3px 4px #eeeeee inset;
+    box-shadow: -3px 0 3px 4px #eeeeee inset;*/
+}
+
+.offcanvas ul {
+  
+}
+
+.offcanvas li {
+  display: block;
+  border: 1px solid #ddd;
+  border-top:none;
+  position:relative;
+}
+.offcanvas li:first-child {
+border-top:1px solid #ddd;
+  margin-top: 13px;
+}
+
+.slide-btn a {
+  padding: 25px 0 25px 10px !important;
+}
+
+.offcanvas a {
+}
+
+.offcanvas ul ul a {
+  padding-left: 40px;
+}
+
+.offcanvas {
+  display: none;
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .offcanvas {
+    display: none !important;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 639px) {
+ .offcanvas {
+    display: block;
+  }
+  #frescoHeader .headerResponsive .mobile-menu-toggle {
+    float: left;
+    display: block;
+  }
+  .slide {
+  -moz-transform: translateX(80%);
+  -webkit-transform: translateX(80%);
+  -o-transform: translateX(80%);
+  -ms-transform: translateX(80%);
+  transform: translateX(80%);
+  -moz-transition: transform 0.3s ease 0s, width 0.3s ease 0s;
+  -webkit-transition: transform 0.3s ease 0s, width 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s, width 0.3s ease 0s;
+  -ms-transition: transform 0.3s ease 0s, width 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, width 0.3s ease 0s;
+}
+}
+.mobile-signInList{margin:0 0 0.725em !important}
+.mobile-signInList a ,.mobile-catList a, .mobile-logOutList a{ background: #fff;
+  font-size:1.25em !important; display:block;
+  
+  
+  padding: 12px 50px 12px 50px;
+  color: #0396b6 !important;
+  
+  	background-color: 			#fff /*{a-body-background-color}*/;
+	
+	color: 					#333 /*{a-body-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ 	#f3f3f3 /*{a-body-shadow-color}*/;
+} .mobile-catList a , .mobile-logOutList a {padding:14px 26px 14px 50px}
+
+.mobile-signInList a:hover, .mobile-catList a:hover,.mobile-signInList a:active, .mobile-catList a:active, .mobile-logOutList a:hover ,.mobile-logOutList a:active{
+ -webkit-box-shadow: inset 0 0 4px 0 #cccccc;
+  -moz-box-shadow: inset 0 0 4px 0 #cccccc;
+  box-shadow: inset 0 0 4px 0 #cccccc; text-decoration:none}
+.mobile-signIn ,.mobile-signUp{display:block;color:#0396b6}  
+.mobile-signInList h2{color:#999999; font-size:1em; font-weight:normal;font-family:latobold;}
+
+
+.mobile-signInList li a:after ,.mobile-catList li a:after , .mobile-logOutList a:after{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url('http://css.yatra.com/content/fresco/default/images/ytServiceSprite.png');
+  width: 14px;
+  height: 28px;
+  /* max-width: 480 */
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin-top: -12px;
+  background-position:-209px -241px;
+  position:absolute;top:53%; right:1.09em;
+  content: "";
+    display: block;
+    
+    position: absolute;
+    
+  
+  /* max-width: 480 */
+}
+.scroll .guest-area li{border:none}
+.scroll .guest-area li h2{ margin: 0;
+  font-size:  1.25em; font-weight:normal
+  line-height: 1.35em;
+  color: #333333;
+}
+.offcanvas .offcanvas-iconsSprite { position: absolute;
+  top: 50%;
+  left: 5px;
+  float: left;
+  margin: -16px 0 0 4px;
+  z-index: 999;}
+.offcanvas-iconsSprite:after{
+background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url('http://css.yatra.com/content/fresco/default/images/ytServiceSprite.png');
+  width: 24px;
+  height: 24px;content: "";
+    display: inline-block;    
+    }
+.iconRec-signin:after{background-position:-281px -26px}
+.iconRec-signup:after{background-position:-384px -1px}
+.iconRec-lagout:after{background-position:-410px -1px}
+.iconRec-home:after{background-position:-307px -27px}
+.iconRec-flights:after{background-position:-280px -1px} 
+.iconRec-hotels:after{background-position:-307px -1px} 
+.iconRec-holidays:after{background-position:-435px -1px} 
+.iconRec-events:after{background-position:-460px -1px} 
+.iconRec-mybooking:after{background-position:-334px -27px} 
+
+.mobile-catList li .offcanvas-iconsSprite,.mobile-logOutList li .offcanvas-iconsSprite{margin-top:-10px}
+
+.nav-scroll{overflow-y:scroll!important;max-height:100%}
+.mobile-catList{margin-bottom:50px}
+
+/* End resposive header css */
+

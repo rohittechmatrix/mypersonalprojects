@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.w439{width:439px;}
+.ytContainerFixed{padding:11px 18px;}
+#bannerWrap p{font-size:14px;}
+.arrow-down {width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 26px solid #085467; margin:0 auto;}
+.fig-parent-div{position:relative; min-height:573px;}
+.sallu-img{ bottom:-3px; right:0; position:absolute; width:485px;}
+.lft-column{width:490px; float:left; padding-left:29px;}
+.pd-lft19{padding-left:19px;}
+.wrapper-bg{background:#ffffff;}
+.w169{width:169px;}
+.f20{font-size:20px;}
+.f-white{color:#ffffff}
+.f-Upper{text-transform:uppercase;}
+.fl-lft{float:left;}
+.bdr-grey{background-color:#d3d3d3;  height:1px; font-size:1px; overflow:hidden;}
+.fl-rht{float:right;}
+.detail-link{color:#5be1ff; font-weight:bold; display:inline; text-decoration:none; cursor:pointer;}
+a:hover.detail-link{color:#5be1ff;}
+.more-arrw, .less-arrw, .holiday-Ic, .working-Ic, .earning-Ic, .training-Ic, .family-Ic, .smily-IC{background:url(../images/icon-Image.gif) no-repeat;}
+.more-arrw{background-position:left -92px; width:15px; height:14px; display:inline-block; margin-left:-3px}
+.less-arrw{background-position:-25px -92px; width:15px; height:14px; display:inline-block; margin-left:-3px}
+.holiday-Ic{background-position:left -126px; width:65px; height:64px;  float:left}
+.working-Ic{background-position:-85px -126px; width:65px; height:64px;  float:left}
+.earning-Ic{background-position:-170px -126px; width:65px; height:64px;  float:left}
+.training-Ic{background-position:left -210px; width:65px; height:64px;  float:left}
+.family-Ic{background-position:-85px -210px; width:65px; height:64px;  float:left}
+.smily-IC{background-position:-164px -210px; width:80px; height:83px; margin:0 auto;}
+
+#bannerWrap{background-color:#085569;}
+.lft-column  ul {list-style-type:none;}
+.lft-column ul li{margin-top:25px; clear:both; font-size:20px; display:block;}
+.lft-column ul li p{float:left; padding-top:19px; margin-left:17px;}
+#rht-column{background-color:#e9eced; padding:25px;  width:386px; float:right; border:1px solid #e4e5e5}
+#rht-column h2{font-weight:normal;}
+#thnk-u{padding:10px;  text-align:center; font-size:23px;}
+#thnk-u a{color:#3472c6; text-decoration:none;}
+form label{font-size:13px; color:#5f5f5f; display:block; margin:13px 0 6px 0;}
+form input, form select{width:193px; height:23px; padding:5px; box-shadow:0px 1px 7px #e8e8e8 inset; border:1px solid #cdcecf;}
+form select{height:35px !important; padding:7px;}
+form input[type=checkbox]{width:14px; height:14px;}
+.submit-btn{background:url(../images/btn-bg.gif) repeat-x left top; width:200px; height:41px; border:1px solid #ef8433; border-radius:5px; box-shadow:none; font-size:20px; color:#ffffff; font-weight:bold; cursor:pointer}

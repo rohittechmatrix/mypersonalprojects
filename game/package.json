@@ -1,0 +1,21 @@
+{
+  "name": "yatraGame",
+  "version": "0.1.0",
+  "description": "Game to earn eCash",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Rajat Aggarwal",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "cookie-parser": "^1.3.3",
+    "debug": "^2.1.0",
+    "ejs": "^1.0.0",
+    "express": "^4.10.4",
+    "mongojs": "^0.17.0",
+    "morgan": "^1.5.0"
+  }
+}
